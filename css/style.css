@@ -172,7 +172,7 @@ p {
 }
 
 .header__slogan {
-  margin-top: 44px;
+  /* margin-top: 44px; */
   padding: 0 5px;
 }
 
@@ -257,6 +257,7 @@ p {
 .tag-list {
   margin-bottom: 12px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .tag-list__item {
@@ -325,6 +326,7 @@ p {
   display: inline-block;
   font: var(--font-text-mobile);
   color: var(--text-color);
+
 }
 
 .article-text:nth-child(n+2) {
@@ -353,7 +355,8 @@ p {
 }
 
 .post__title {
-  font: 700 14px/1.2 "OpenSans", sans-serif;
+  font: 700 14px "OpenSans", sans-serif;
+  
   color: #000;
   text-transform: uppercase;
 }
@@ -365,8 +368,14 @@ p {
   display: flex;
 }
 
-.search-text {  /* не понимаю */
-  /* min-width: 281px; */
+.search-box {
+  display: block;
+  width: 100%;
+}
+
+.search-text {
+  display: block;
+  width: 100%;
   height: 49px;
   font: var(--font-text-mobile);
   padding-left: 20px;
@@ -685,7 +694,7 @@ p {
   margin-top: -35px;
 }
 
-shop__item-title {
+.shop__item-title {
   margin-bottom: 15px;
   font: 700 17px "OpenSans", sans-serif;
   color: var(--text-color);
@@ -764,10 +773,12 @@ shop__item-title {
 }
 
 /*    === copyright ===    */
-
-.copyright {
+.copyright{
   text-align: center;
   margin: 50px 0;
+}
+
+.copyright__link {
   font: 700 12px "OpenSans", sans-serif;
   color: #999;
 }
@@ -817,6 +828,17 @@ shop__item-title {
 /* =============================== */
   .section__title {
     font: var(--font-heading-tablet);
+  }
+
+  .new-posts {
+    margin-top: 0;
+    font: var(--font-tag);
+  }
+
+  .newsletter-font,
+  .tags-font,
+  .theme-font {
+    font: var(--font-tag);
   }
 
 /* ========== Trends ========== */
@@ -898,7 +920,7 @@ shop__item-title {
 @media (min-width: 1200px) {
 
   body{
-    max-width: 1660px;
+    /* max-width: 1660px; */
     margin: 0 auto;
   }
 
@@ -912,7 +934,7 @@ shop__item-title {
 
   .header {
     width: 100%;
-    max-width: 1660px;
+    /* max-width: 1660px; */
     height: 450px;
     background-image: url("../images/banner-bg.jpg");
     background-size: cover;
@@ -969,6 +991,13 @@ shop__item-title {
     font: var(--font-heading-desktop);
   }
 
+  .new-posts,
+  .newsletter-font,
+  .tags-font,
+  .theme-font {
+    font: var(--font-tag);
+  }
+
 /* ========== Trends ========== */
   
   .trends-item {
@@ -984,6 +1013,8 @@ shop__item-title {
   .article {
     display: flex;
     margin-bottom: 57px;
+    max-height: 294px;
+    overflow: hidden;
   }
 
   .article-image {
@@ -998,6 +1029,17 @@ shop__item-title {
 
   .article:nth-child(n) {
     border-bottom: none;
+  }
+
+  .article-tag-list {
+    margin-top: 0;
+  }
+
+  .article-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
   }
 
   /* ========== shop ========== */
