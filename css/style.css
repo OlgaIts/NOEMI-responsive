@@ -209,7 +209,7 @@ p {
  }
 
 .trends-item {
-  min-width: 320px;
+  min-width: auto;
   margin-bottom: 3px;
   min-height: 230px;
   padding: 85px 0 20px 0;
@@ -341,7 +341,7 @@ p {
   margin-bottom: 60px;
 }
 
-.posts__list-item {
+.posts__item {
   margin-bottom: 20px;
   display: flex;
 }
@@ -351,12 +351,17 @@ p {
 }
 
 .post-time {
-  margin-bottom: 10px;
+  display: block;
+  margin-top: -3px;
+  margin-bottom: 9px;
 }
 
 .post__title {
-  font: 700 14px "OpenSans", sans-serif;
-  
+  font: 700 14px/1.1 "OpenSans", sans-serif;
+}
+
+.post__title-link {
+  display: inline-block;
   color: #000;
   text-transform: uppercase;
 }
@@ -882,7 +887,7 @@ p {
     width: 272px;
   }
 
-  .post__title:hover {
+  .post__title-link:hover {
     color: var(--accent-color);
   }
 
