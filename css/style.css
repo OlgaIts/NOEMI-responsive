@@ -940,7 +940,7 @@ p {
   .header {
     width: 100%;
     /* max-width: 1660px; */
-    height: 450px;
+    min-height: 450px;
     background-image: url("../images/banner-bg.jpg");
     background-size: cover;
     background-position: top center;
@@ -987,7 +987,11 @@ p {
 
   .header__title {
     font: 700 45px/1.66 "OpenSans", sans-serif;
-    padding: 105px 208px 105px 230px;
+    /* padding: 105px 208px 105px 230px; */
+    padding-left: 230px;
+    padding-right: 208px;
+    padding-top: 97px;
+    padding-bottom: 0;
   }
 
   /* =============================== */
@@ -1024,7 +1028,7 @@ p {
 
   .article-image {
     width: 381px;
-    background-color: #bcb3a1; 
+    background-color: #eff6f1; 
   }
 
   .article-inner {
