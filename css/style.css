@@ -799,7 +799,7 @@ p {
   color: #999;
 }
 
-@media (orientation: landscape) {
+@media (max-width: 641px), (orientation: landscape) {
   .container {
     width: 1200px;
   }
