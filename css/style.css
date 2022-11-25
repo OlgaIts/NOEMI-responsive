@@ -800,8 +800,19 @@ p {
 }
 
 @media (orientation: landscape) {
+
+  .trends__item-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3px;
+  }
+
   .trends-item {
     width: calc(50% - 3px);
+    display: flex;
+    align-items: flex-end;
   }
 }
 
