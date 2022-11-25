@@ -800,11 +800,6 @@ p {
 }
 
 @media (orientation: landscape) {
-  .trends__item-box {
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
   .trends-item {
     width: calc(50% - 3px);
   }
