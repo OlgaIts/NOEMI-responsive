@@ -802,7 +802,6 @@ p {
 @media (max-width: 640px) and (orientation: landscape) {
   .trends__item-box {
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-between;
   }
 
