@@ -799,11 +799,7 @@ p {
   color: #999;
 }
 
-@media (max-width: 641px), (orientation: landscape) {
-  .container {
-    width: 1200px;
-  }
-
+@media (max-width: 640px) and (orientation: landscape) {
   .trends__item-box {
     flex-wrap: wrap;
     flex-direction: row;
