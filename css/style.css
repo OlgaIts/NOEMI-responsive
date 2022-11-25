@@ -1064,3 +1064,19 @@ p {
     width: calc(33.33% - 60px);
   }
 }
+
+@media (orientation: landscape) {
+  .container {
+    width: 1200px;
+  }
+
+  .trends__item-box {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .trends-item {
+    width: calc(50% - 3px);
+  }
+}
