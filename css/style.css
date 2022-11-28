@@ -945,6 +945,12 @@ p {
   .shop__item {
     width: calc(50% - 23px);
   }
+
+  @media (orientation: landscape) {
+    .trends-item {
+      width: calc(25% - 3px);
+    }
+  }
 }
 
  /*===============================
