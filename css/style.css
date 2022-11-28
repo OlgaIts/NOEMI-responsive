@@ -946,7 +946,7 @@ p {
     width: calc(50% - 23px);
   }
 
-  @media (orientation: landscape) {
+  @media (min-width: 768px) and (max-width: 1199px) and (orientation: landscape) {
     .trends-item {
       width: calc(25% - 3px);
     }
